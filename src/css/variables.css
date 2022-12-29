@@ -1,0 +1,12 @@
+:root {
+  --black: #202020;
+  --gray: #5a5a5a;
+  --light-gray: #cbcbcb;
+  --white: #fff;
+  --green: #bfe55e;
+  --light-green: #f3ffce;
+  --page-background-color: var(--black);
+  --page-paddings: 30px 20px;
+  --gap-1: 35px;
+  --gap-2: 70px;
+}
