@@ -1,0 +1,17 @@
+/* Page */
+
+.page {
+  margin: 0;
+}
+
+.page__body {
+  padding: var(--page-paddings);
+  margin: 0;
+  font-family: PPNeueMontreal, Arial, sans-serif;
+  background-color: var(--page-background-color);
+  color: var(--white);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
