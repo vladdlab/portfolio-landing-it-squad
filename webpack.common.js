@@ -27,7 +27,7 @@ const path = require('path')
       ],
     }),
     new HtmlWebpackPlugin({
-      title: 'Title',
+      title: 'IT SQR',
       template: 'index.html',
     }),
     new StylelintPlugin({

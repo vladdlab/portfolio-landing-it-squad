@@ -10,6 +10,9 @@ const { merge } = require('webpack-merge');
     compress: true,
     open: true,
     port: 8080,
+    devMiddleware: {
+      writeToDisk: true,
+    },
   },
 
    module: {
