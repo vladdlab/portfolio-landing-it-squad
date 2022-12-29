@@ -1,0 +1,20 @@
+/* Hero */
+
+.hero__team-name {
+  font-weight: 500;
+  font-size: 3.75rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+.hero__description {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.hero__accent {
+  color: var(--green);
+}
