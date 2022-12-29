@@ -1,0 +1,39 @@
+@font-face {
+  font-family: PPNeueMontreal;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local("PPNeueMontreal"), url("../fonts/PPNeueMontreal-Book.otf") format("otf");
+}
+
+@font-face {
+  font-family: PPNeueMontreal;
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: local("PPNeueMontreal"), url("../fonts/PPNeueMontreal-Thin.otf") format("otf");
+}
+
+@font-face {
+  font-family: PPNeueMontreal;
+  font-weight: 450;
+  font-style: italic;
+  font-display: swap;
+  src: local("PPNeueMontreal"), url("../fonts/PPNeueMontreal-Italic.otf") format("otf");
+}
+
+@font-face {
+  font-family: PPNeueMontreal;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local("PPNeueMontreal"), url("../fonts/PPNeueMontreal-Medium.otf") format("otf");
+}
+
+@font-face {
+  font-family: PPNeueMontreal;
+  font-weight: 800;
+  font-style: bold;
+  font-display: swap;
+  src: local("PPNeueMontreal"), url("../fonts/PPNeueMontreal-Bold.otf") format("otf");
+}
