@@ -1,12 +1,315 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
-<body>
-  <div id="app"></div>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      IT SQUAD
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Open navigation</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#about">About</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#services">Services</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Digital agency IT SQUAD</h1>
+    <section class="hero">
+      <div class="hero__wrapper">
+        <p class="hero__team-name">IT Squad</p>
+        <p class="hero__description lead">
+          Development of <em class="hero__accent">a full cycle</em><br>
+          turnkey online stores
+        </p>
+
+        <picture>
+          <source media="(min-width: 601px)"
+                  srcset="assets/hero.png">
+          <img class="hero__image image" src="assets/hero_mobile.png" alt="Our team photo">
+        </picture>
+
+        <a class="hero__link-to-contacts" href="#contacts">Work with us</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__wrapper">
+        <h2 class="about__title title">About</h2>
+
+        <p class="about__lead lead">
+          IT SQUAD is a digital agency, specialize in front-end development of online stores on the Shopify platform.
+        </p>
+
+        <img class="about__image image" width="350" height="285" src="/assets/about-1.png" alt="Image of our workflow">
+
+        <p class="about__description">
+          We specialize in front-end development of online stores on the Shopify platform. Focused on digitally transforming brands. We help businesses launch, grow and gain a competitive edge in today’s digital-led world through strategy and tech. Our mission is to create remarkable digital experiences that connect brands to their customers.
+        </p>
+
+        <img class="about__image image" width="350" height="265" src="/assets/about-2.png" alt="Image of our workflow">
+
+        <p class="about__values">
+          Based in Ukraine. <br>
+          10% of each project we donate for Ukraine.
+        </p>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages__wrapper">
+        <h2 class="advantages__title title">Advantages</h2>
+
+        <p class="advantages__accent">
+          We shepherd our clients’ growth by meticulously enhancing their image with highly individualized focus. With an editor’s eye on emerging trends and deep ties to cultural arbiters, we are an editorial platform for our clients’ voice.
+        </p>
+
+        <ol class="advantages__list">
+          <li class="advantages__item">
+            We provide fullcycle Online Store Development, from the clients idea to the final result
+          </li>
+          <li class="advantages__item">
+            We help on each development step to meet all needs of the client
+          </li>
+          <li class="advantages__item">
+            We provide most required services for the E-Commerce stores
+          </li>
+          <li class="advantages__item">
+            We care about the success of your business because this’s our success too
+          </li>
+          <li class="advantages__item">
+            After launch support
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="numbers">
+      <div class="numbers__wrapper">
+        <h2 class="numbers__title title">IT SQUAD in numbers</h2>
+
+        <dl class="numbers__list">
+          <div class="numbers__item">
+            <dt class="numbers__value">6 +</dt>
+            <dd class="numebrs__description">years in business</dd>
+          </div>
+
+          <div class="numbers__item">
+            <dt class="numbers__value">9000 +</dt>
+            <dd class="numebrs__description">hours coding</dd>
+          </div>
+
+          <div class="numbers__item">
+            <dt class="numbers__value">130 +</dt>
+            <dd class="numebrs__description">projects</dd>
+          </div>
+
+          <div class="numbers__item">
+            <dt class="numbers__value">7 500 000 $ +</dt>
+            <dd class="numebrs__description">total revenue to the clients</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="services__wrapper">
+        <h2 class="services__title title">Services</h2>
+
+        <p class="services__lead lead">
+          We love crafting beautiful, smart and inspired work that is focused on a business’ goals and their customers.
+        </p>
+
+        <ol class="services__list">
+          <li class="services__item">
+            Shopify Online Store Development
+          </li>
+          <li class="services__item">
+            Website Optimization
+          </li>
+          <li class="services__item">
+            Store Migration
+          </li>
+          <li class="services__item">
+            Custom Development
+          </li>
+          <li class="services__item">
+            E-mail Marketing
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="stages">
+      <div class="stages__wrapper">
+        <h2 class="stages__title title">Stages of work</h2>
+
+        <p class="stages__lead lead">
+          We do this across multiple competency centers to help transform organizations.
+        </p>
+
+        <ol class="stages__list">
+          <li class="stages__item">
+            Disscussing all requirements & mockups for the project
+          </li>
+          <li class="stages__item">
+            Creation of an estimation  table/ Gant’s diagram
+          </li>
+          <li class="stages__item">
+            Work plan approval
+          </li>
+          <li class="stages__item">
+            Starting the development
+          </li>
+          <li class="stages__item">
+            Ready WebSite QA
+          </li>
+          <li class="stages__item">
+            Transfer of the finished store to the client
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="team__wrapper">
+        <h2 class="team__title title">The team</h2>
+
+        <img class="team__image image" src="/assets/team-1.png" alt="Photo of our team">
+
+        <p class="team__lead lead">
+          We bring a global team of specialized developers, and technicians with a mission of consistently delivering ideas and work that matters.
+        </p>
+
+        <p class="team__mission">
+          Our mission is simple - consistently deliver ideas and work that matters and exceeds client expectations through a powerful mix of exquisite design and innovative technology. IT Squad is a young, close-knit and fast growing team of professionals, driven by bold ideas and diverse perspectives. We care about our projects and what we do because we want to make sure our clients can excel.
+        </p>
+      </div>
+    </section>
+
+    <section class="customers">
+      <div class="customers__wrapper">
+        <h2 class="customers__title title">Our customers</h2>
+
+        <p class="customers__lead lead">
+          WE TRANSFORM COMPANIES INTO THE BEST VERSIONS OF THEMSELVES.
+        </p>
+
+        <ul class="customers__list">
+          <li class="customers__item">
+            <a class="customers__link" href="https://urbanista.com">Urbanista.com</a>
+          </li>
+          <li class="customers__item">
+            <a class="customers__link" href="https://dreamerdesigns.com">Dreamerdesigns.com</a>
+          </li>
+          <li class="customers__item">
+            <a class="customers__link" href="https://mybacs.com">MyBacs.com</a>
+          </li>
+          <li class="customers__item">
+            <a class="customers__link" href="https://sokolov.eu">Sokolov.eu</a>
+          </li>
+          <li class="customers__item">
+            <a class="customers__link" href="https://filippoloreti.com">filippoloreti.com</a>
+          </li>
+          <li class="customers__item">
+            <a class="customers__link" href="https://avatar-languages.com">avatar-languages.com</a>
+          </li>
+          <li class="customers__item">
+            <a class="customers__link" href="https://thebrandsunday.com">Thebrandsunday.com</a>
+          </li>
+          <li class="customers__item">
+            <a class="customers__link" href="https://vitalgym.co">Vitalgym.co</a>
+          </li>
+          <li class="customers__item">
+            <a class="customers__link" href="https://perifit.co">Perifit.co</a>
+          </li>
+          <li class="customers__item">
+            <a class="customers__link" href="https://santatrees.co.uk">Santatrees.co.uk</a>
+          </li>
+          <li class="customers__item">
+            <a class="customers__link" href="https://urbanhome.co">Urbanhome.co</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="consultation">
+      <div class="consultation__wrapper">
+        <h2 class="consultation__title title">LET'S DISCUSS YOUR PROJECT</h2>
+
+        <button class="consultation__btn" type="button">To get the consultation</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <section class="contacts" id="contacts">
+      <h2 class="contacts__title title">Get in touch</h2>
+
+      <p class="contacts__lead lead">
+        We love working alongside ambitious brands and people. Drop us a line if you’d like us to build something great together.
+      </p>
+
+      <div class="contacts__items">
+        <p class="contacts__physical-address">
+          Ukraine, Kyiv<br>
+          Mon-Fri - <time datetime="09:00">09:00</time>-<time datetime="19:00">19:00</time><br>
+          Sat-Sun - Day off
+        </p>
+
+        <p class="contacts__tels">
+          <a class="contacts__tel" href="tel:+380508221214">+380 50 822 12 14</a>
+          <a class="contacts__tel" href="tel:+380507133591">+380 50 713 35 91</a>
+        </p>
+
+        <p class="contacts__emails">
+          <a class="contacts__email" href="mailto:radwebmax@gmail.com">radwebmax@gmail.com</a>
+          <a class="contacts__email" href="mailto:info@itsquad.agency"></a>
+          <a class="contacts__email" href="mailto:recruiter@itsquad.agency">recruiter@itsquad.agency</a>
+        </p>
+
+
+        <ul class="contacts__socials">
+          <li class="contacts__social">
+            <a class="contacts__social-link" href="#" target="_blank">Instagram</a>
+          </li>
+          <li class="contacts__social">
+            <a class="contacts__social-link" href="#" target="_blank">Facebook</a>
+          </li>
+          <li class="contacts__social">
+            <a class="contacts__social-link" href="#" target="_blank">Upwork</a>
+          </li>
+          <li class="contacts__social">
+            <a class="contacts__social-link" href="#" target="_blank">Calendly</a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="up-page-anchor" href="#">back to top</a>
+    </section>
+
+    <section class="powered-by">
+      IT Squad /22 ©
+    </section>
+  </footer>
 </body>
 </html>
