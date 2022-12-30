@@ -1,0 +1,33 @@
+/* .customers {
+
+} */
+
+.customers__item {
+  padding: 1em 0;
+  border-top: 1px solid var(--light-green);
+}
+
+.customers__item:last-child {
+  border-bottom: 1px solid var(--light-green);
+}
+
+.customers__link {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--white);
+  position: relative;
+}
+
+.customers__link::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 0;
+  display: block;
+  width: 0.9em;
+  height: 0.9em;
+  background-image: url("../assets/link.svg");
+  background-size: cover;
+}

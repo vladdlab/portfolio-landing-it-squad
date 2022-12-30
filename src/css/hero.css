@@ -13,6 +13,7 @@
   font-size: 1.25rem;
   line-height: 1.2;
   text-transform: uppercase;
+  margin-bottom: var(--gap-2);
 }
 
 .hero__accent {

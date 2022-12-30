@@ -7,7 +7,7 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="page__body">
-  <header class="page-header">
+  <!-- <header class="page-header">
     <a class="page-header__logo" href="#">
       IT SQUAD
     </a>
@@ -30,15 +30,15 @@
         </ul>
       </div>
     </nav>
-  </header>
+  </header> -->
 
   <main class="page-main">
     <h1 class="visually-hidden">Digital agency IT SQUAD</h1>
-    <section class="hero">
+    <section class="page__section hero">
       <div class="hero__wrapper">
         <p class="hero__team-name">IT Squad</p>
         <p class="hero__description lead">
-          Development of <em class="hero__accent">a full cycle</em><br>
+          Development of <span class="hero__accent">a full cycle</span><br>
           turnkey online stores
         </p>
 
@@ -48,11 +48,11 @@
           <img class="hero__image image" src="assets/hero_mobile.png" alt="Our team photo">
         </picture>
 
-        <a class="hero__link-to-contacts" href="#contacts">Work with us</a>
+        <a class="hero__link-to-contacts contact-btn" href="#contacts">Work with us</a>
       </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="page__section about" id="about">
       <div class="about__wrapper">
         <h2 class="about__title title">About</h2>
 
@@ -75,11 +75,11 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="page__section advantages">
       <div class="advantages__wrapper">
         <h2 class="advantages__title title">Advantages</h2>
 
-        <p class="advantages__accent">
+        <p class="advantages__lead lead">
           We shepherd our clients’ growth by meticulously enhancing their image with highly individualized focus. With an editor’s eye on emerging trends and deep ties to cultural arbiters, we are an editorial platform for our clients’ voice.
         </p>
 
@@ -103,35 +103,35 @@
       </div>
     </section>
 
-    <section class="numbers">
+    <section class="page__section numbers">
       <div class="numbers__wrapper">
         <h2 class="numbers__title title">IT SQUAD in numbers</h2>
 
         <dl class="numbers__list">
           <div class="numbers__item">
             <dt class="numbers__value">6 +</dt>
-            <dd class="numebrs__description">years in business</dd>
+            <dd class="numbers__description">years in business</dd>
           </div>
 
           <div class="numbers__item">
             <dt class="numbers__value">9000 +</dt>
-            <dd class="numebrs__description">hours coding</dd>
+            <dd class="numbers__description">hours coding</dd>
           </div>
 
           <div class="numbers__item">
             <dt class="numbers__value">130 +</dt>
-            <dd class="numebrs__description">projects</dd>
+            <dd class="numbers__description">projects</dd>
           </div>
 
           <div class="numbers__item">
             <dt class="numbers__value">7 500 000 $ +</dt>
-            <dd class="numebrs__description">total revenue to the clients</dd>
+            <dd class="numbers__description">total revenue to the clients</dd>
           </div>
         </dl>
       </div>
     </section>
 
-    <section class="services" id="services">
+    <section class="page__section services" id="services">
       <div class="services__wrapper">
         <h2 class="services__title title">Services</h2>
 
@@ -142,24 +142,29 @@
         <ol class="services__list">
           <li class="services__item">
             Shopify Online Store Development
+            <a class="services__link" href="#"></a>
           </li>
           <li class="services__item">
             Website Optimization
+            <a class="services__link" href="#"></a>
           </li>
           <li class="services__item">
             Store Migration
+            <a class="services__link" href="#"></a>
           </li>
           <li class="services__item">
             Custom Development
+            <a class="services__link" href="#"></a>
           </li>
           <li class="services__item">
             E-mail Marketing
+            <a class="services__link" href="#"></a>
           </li>
         </ol>
       </div>
     </section>
 
-    <section class="stages">
+    <section class="page__section stages">
       <div class="stages__wrapper">
         <h2 class="stages__title title">Stages of work</h2>
 
@@ -190,11 +195,13 @@
       </div>
     </section>
 
-    <section class="team">
+    <section class="page__section team">
       <div class="team__wrapper">
         <h2 class="team__title title">The team</h2>
 
         <img class="team__image image" src="/assets/team-1.png" alt="Photo of our team">
+
+        <img class="team__image image" src="/assets/team-2.png" alt="Photo of our team">
 
         <p class="team__lead lead">
           We bring a global team of specialized developers, and technicians with a mission of consistently delivering ideas and work that matters.
@@ -206,7 +213,7 @@
       </div>
     </section>
 
-    <section class="customers">
+    <section class="page__section customers">
       <div class="customers__wrapper">
         <h2 class="customers__title title">Our customers</h2>
 
@@ -252,11 +259,11 @@
       </div>
     </section>
 
-    <section class="consultation">
+    <section class="page__section consultation">
       <div class="consultation__wrapper">
         <h2 class="consultation__title title">LET'S DISCUSS YOUR PROJECT</h2>
 
-        <button class="consultation__btn" type="button">To get the consultation</button>
+        <button class="consultation__btn contact-btn" type="button">To get the consultation</button>
       </div>
     </section>
   </main>

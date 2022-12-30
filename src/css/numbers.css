@@ -1,0 +1,15 @@
+.numbers__item {
+  padding: 0.5em 0 0.5em 3.75em;
+  margin-bottom: var(--gap-1);
+  border-bottom: 1px solid var(--light-green);
+}
+
+.numbers__value {
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+.numbers__description {
+  margin: 0;
+  color: var(--light-gray);
+}

@@ -1,0 +1,13 @@
+.services__item {
+  position: relative;
+}
+
+.services__link {
+  position: absolute;
+  right: 0;
+  top: 0.75em;
+  width: 0.9em;
+  height: 0.9em;
+  background-image: url("../assets/link.svg");
+  background-size: cover;
+}
