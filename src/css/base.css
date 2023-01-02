@@ -27,6 +27,16 @@
   width: 100%;
 }
 
+.up-btn {
+  color: var(--green);
+}
+
+.powered-by {
+  font-size: 0.75rem;
+  text-align: right;
+  padding: 0 var(--page-x-paddings);
+}
+
 h1,
 h2,
 p,

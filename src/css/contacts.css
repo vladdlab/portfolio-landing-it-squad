@@ -1,0 +1,34 @@
+.contacts {
+  padding: var(--gap-1) var(--page-x-paddings);
+  border-top: 1px solid var(--light-green);
+  border-bottom: 1px solid var(--light-green);
+}
+
+.contacts__items {
+  font-size: 0.875rem;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contacts__physical-address {
+  margin-bottom: 0;
+}
+
+.contacts__tels {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.contacts__emails {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.contacts__up-btn {
+  margin-top: var(--gap-1);
+  align-self: center;
+}
