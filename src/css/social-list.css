@@ -1,0 +1,13 @@
+.social-list {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 28px;
+  border-top: 1px solid var(--black);
+}
+
+.social-list__item a {
+  color: var(--black);
+  font-weight: 500;
+}

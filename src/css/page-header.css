@@ -1,0 +1,5 @@
+.page-header {
+  position: relative;
+  padding: var(--gap-1) var(--page-x-paddings);
+  margin-bottom: 15px;
+}

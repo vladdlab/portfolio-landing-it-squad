@@ -7,14 +7,24 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="page__body">
-  <!-- <header class="page-header">
-    <a class="page-header__logo" href="#">
-      IT SQUAD
-    </a>
-    <nav class="main-nav">
+  <header class="page-header">
+    <nav class="main-nav main-nav--closed">
+      <a class="main-nav__logo" href="/">
+        <svg width="116" height="36" viewBox="0 0 116 36" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M45.3722 16.7382C42.2296 15.9684 39.925 15.5834 39.925 12.7705C39.925 11.0236 41.5412 9.86877 44.5641 9.86877C47.9462 9.86877 49.5624 11.3493 49.9515 14.1918H52.6451C52.286 9.80956 49.1134 7.5 44.5641 7.5C39.8353 7.5 37.2314 9.72073 37.2314 13.0666C37.2314 17.1824 41.0624 18.2779 44.2648 19.0182C49.0536 20.1137 50.6398 20.6467 50.6398 23.5485C50.6398 25.4435 49.3229 27.1312 45.6117 27.1312C41.1222 27.1312 39.3265 24.8809 39.0272 21.9791H36.3335C36.6328 26.8351 40.5536 29.5 45.6117 29.5C51.0289 29.5 53.3335 26.6279 53.3335 23.5485C53.3335 18.7221 50.1909 17.9226 45.3722 16.7382Z"/>
+          <path d="M69.491 28.2863L67.3486 25.6405C69.2562 23.7163 70.5475 21.1608 71.0757 18.3346C72.3083 11.7804 69.0508 7 62.7998 7C56.7249 7 51.7946 11.6 50.5914 17.9739C49.3588 24.5281 52.6163 29.3386 58.8379 29.3386C61.215 29.3386 63.4748 28.6471 65.3824 27.3542L67.5247 30L69.491 28.2863ZM59.0434 26.9333C53.8196 26.9333 52.3228 22.8745 53.1739 18.3346C54.0543 13.6144 57.2825 9.40523 62.6237 9.40523C67.8475 9.40523 69.3736 13.434 68.4932 17.9739C68.0823 20.1386 67.2019 22.1529 65.9106 23.7163L63.6802 20.9804L61.7433 22.6941L63.9443 25.4601C62.5944 26.3621 60.9803 26.9333 59.0434 26.9333Z"/>
+          <path d="M85.3335 21.8951V7.5H82.7058V21.8951C82.7058 25.3957 80.9539 27.0857 77.3335 27.0857C73.7131 27.0857 71.9612 25.3957 71.9612 21.8951V7.5H69.3335V21.8951C69.3335 26.3011 71.7569 29.5 77.3335 29.5C82.9101 29.5 85.3335 26.3011 85.3335 21.8951Z"/>
+          <path d="M94.6062 23.7427L96.5153 29H99.3335L91.3638 8H88.3335L80.3335 29H83.1517L85.0608 23.7427H94.6062ZM85.9699 21.393L89.8183 10.4378H89.8789L93.7274 21.393H85.9699Z"/>
+          <path d="M97.3335 29H104.964C110.769 29 114.333 25.2699 114.333 18.5147C114.333 11.7594 110.769 8 104.964 8H97.3335V29ZM99.9851 10.3496H104.964C110.327 10.3496 111.682 14.4028 111.682 18.5147C111.682 22.6266 110.327 26.6503 104.964 26.6503H99.9851V10.3496Z"/>
+          <path d="M13.6691 29H16.3025L19.9307 10.3496H26.8946L27.3335 8H10.7724L10.3335 10.3496H17.2974L13.6691 29Z"/>
+          <path d="M5.5824 8L1.3335 29H4.08459L8.3335 8H5.5824Z"/>
+          </svg>
+      </a>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Open navigation</span></button>
-      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#home">Home</a>
+          </li>
           <li class="site-list__item">
             <a href="#about">About</a>
           </li>
@@ -28,15 +38,20 @@
             <a href="#contacts">Contacts</a>
           </li>
         </ul>
-      </div>
+
+        <ul class="main-nav__list social-list">
+          <li class="social-list__item"><a href="">Facebook</a></li>
+          <li class="social-list__item"><a href="">Upwork</a></li>
+          <li class="social-list__item"><a href="">Calendly</a></li>
+        </ul>
     </nav>
-  </header> -->
+  </header>
 
   <main class="page__main">
     <h1 class="visually-hidden">Digital agency IT SQUAD</h1>
     <section class="page__section hero">
       <div class="hero__wrapper">
-        <p class="hero__team-name">IT Squad</p>
+        <p class="hero__team-name">IT SQUAD</p>
         <p class="hero__description lead">
           Development of <span class="hero__accent">a full cycle</span><br>
           turnkey online stores
