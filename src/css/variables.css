@@ -11,3 +11,11 @@
   --gap-1: 35px;
   --gap-2: 70px;
 }
+
+@media (width >= 1200px) {
+  :root {
+    --page-x-paddings: 70px;
+    --gap-1: 70px;
+    --gap-2: 160px;
+  }
+}

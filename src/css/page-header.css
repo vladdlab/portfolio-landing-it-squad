@@ -1,5 +1,8 @@
+/* Page header */
 .page-header {
   position: relative;
   padding: var(--gap-1) var(--page-x-paddings);
+  max-width: calc(1240px + var(--page-x-paddings) * 2);
+  margin: 0 auto;
   margin-bottom: 15px;
 }

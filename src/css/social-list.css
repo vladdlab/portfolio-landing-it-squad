@@ -1,3 +1,4 @@
+/* Social list */
 .social-list {
   display: flex;
   gap: 1em;
@@ -7,6 +8,13 @@
   border-top: 1px solid var(--black);
 }
 
+@media (width >= 1200px) {
+  .social-list {
+    display: none;
+  }
+}
+
+/* Social list Item */
 .social-list__item a {
   color: var(--black);
   font-weight: 500;
