@@ -1,7 +1,11 @@
-/* .customers {
+/* Customers Lead */
+@media (width >= 1200px) {
+  .customers__lead {
+    max-width: 570px;
+  }
+}
 
-} */
-
+/* Customers Item */
 .customers__item {
   padding: 1em 0;
   border-top: 1px solid var(--light-green);
@@ -11,6 +15,13 @@
   border-bottom: 1px solid var(--light-green);
 }
 
+@media (width >= 1200px) {
+  .customers__item {
+    padding: 1.33em 0;
+  }
+}
+
+/* Customers Link */
 .customers__link {
   display: block;
   width: 100%;
@@ -30,4 +41,12 @@
   height: 0.9em;
   background-image: url("../assets/link.svg");
   background-size: cover;
+}
+
+@media (width >= 1200px) {
+  .customers__link::after {
+    top: -0.1em;
+    width: 1.5em;
+    height: 1.5em;
+  }
 }

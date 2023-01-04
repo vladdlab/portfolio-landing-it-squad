@@ -1,3 +1,19 @@
+/* Consaltation */
+@media (width >= 1200px) {
+  .consultation {
+    text-align: center;
+  }
+}
+
+/* Consultation Btn */
 .consultation__btn {
   width: 100%;
+}
+
+@media (width >= 1200px) {
+  .consultation__btn {
+    width: auto;
+    padding-left: 3.1em;
+    padding-right: 3.1em;
+  }
 }

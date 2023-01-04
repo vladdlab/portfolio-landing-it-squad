@@ -1,3 +1,48 @@
+/* Team Inner */
+.team__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0 100px;
+}
+
+@media (width > 1200px) {
+  .team__inner {
+    display: grid;
+    grid-template-columns: 346px 1fr;
+    grid-template-areas:
+      "image1 image2"
+      "image1 lead"
+      "image1 mission";
+  }
+}
+
+/* Team Image */
+
 .team__image:first-of-type {
   display: none;
+}
+
+@media (width >= 1200px) {
+  .team__image:first-of-type {
+    display: block;
+    grid-area: image1;
+  }
+
+  .team__image:last-of-type {
+    grid-area: image2;
+  }
+}
+
+/* Team Lead */
+@media (width >= 1200px) {
+  .team__lead {
+    grid-area: lead;
+  }
+}
+
+/* Team Mission */
+@media (width >= 1200px) {
+  .team__mission {
+    grid-area: mission;
+  }
 }

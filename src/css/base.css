@@ -18,13 +18,21 @@
   color: var(--green);
 }
 
+@media (width >= 1200px) {
+  .title {
+    font-size: 3.75rem;
+  }
+}
+
 .lead {
   text-transform: uppercase;
   color: var(--light-gray);
 }
 
-.image {
-  width: 100%;
+@media (width >= 1200px) {
+  .lead {
+    font-size: 2.5rem;
+  }
 }
 
 .up-btn {
@@ -35,6 +43,8 @@
   font-size: 0.75rem;
   text-align: right;
   padding: 0 var(--page-x-paddings);
+  max-width: calc(1240px + var(--page-x-paddings) * 2);
+  margin: 0 auto;
 }
 
 h1,
@@ -42,6 +52,11 @@ h2,
 p,
 img {
   margin: 0 0 var(--gap-1);
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 ol,
@@ -62,13 +77,30 @@ ol li {
   border-bottom: 1px solid var(--light-green);
 }
 
+@media (width > 1200px) {
+  ol li {
+    padding: 0 0 0.5em 1.5em;
+  }
+}
+
+ol li:last-child {
+  margin-bottom: 0;
+}
+
 ol li::before {
   display: block;
   content: "0" counter(item) "/";
   counter-increment: item;
+  font-size: 20px;
   font-style: italic;
   color: var(--light-gray);
   margin: 0 0 0.5em -1.5em;
+}
+
+@media (width > 1200px) {
+  ol li::before {
+    margin: 0 0 0.5em -2.3em;
+  }
 }
 
 a {

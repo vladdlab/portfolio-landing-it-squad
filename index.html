@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= htmlWebpackPlugin.options.title %></title>
-</head>
-<body class="page__body">
-  <header class="page-header">
-    <nav class="main-nav main-nav--closed">
-      <a class="main-nav__logo" href="/">
-        <svg width="116" height="36" viewBox="0 0 116 36" fill="white" xmlns="http://www.w3.org/2000/svg">
-          <path d="M45.3722 16.7382C42.2296 15.9684 39.925 15.5834 39.925 12.7705C39.925 11.0236 41.5412 9.86877 44.5641 9.86877C47.9462 9.86877 49.5624 11.3493 49.9515 14.1918H52.6451C52.286 9.80956 49.1134 7.5 44.5641 7.5C39.8353 7.5 37.2314 9.72073 37.2314 13.0666C37.2314 17.1824 41.0624 18.2779 44.2648 19.0182C49.0536 20.1137 50.6398 20.6467 50.6398 23.5485C50.6398 25.4435 49.3229 27.1312 45.6117 27.1312C41.1222 27.1312 39.3265 24.8809 39.0272 21.9791H36.3335C36.6328 26.8351 40.5536 29.5 45.6117 29.5C51.0289 29.5 53.3335 26.6279 53.3335 23.5485C53.3335 18.7221 50.1909 17.9226 45.3722 16.7382Z"/>
-          <path d="M69.491 28.2863L67.3486 25.6405C69.2562 23.7163 70.5475 21.1608 71.0757 18.3346C72.3083 11.7804 69.0508 7 62.7998 7C56.7249 7 51.7946 11.6 50.5914 17.9739C49.3588 24.5281 52.6163 29.3386 58.8379 29.3386C61.215 29.3386 63.4748 28.6471 65.3824 27.3542L67.5247 30L69.491 28.2863ZM59.0434 26.9333C53.8196 26.9333 52.3228 22.8745 53.1739 18.3346C54.0543 13.6144 57.2825 9.40523 62.6237 9.40523C67.8475 9.40523 69.3736 13.434 68.4932 17.9739C68.0823 20.1386 67.2019 22.1529 65.9106 23.7163L63.6802 20.9804L61.7433 22.6941L63.9443 25.4601C62.5944 26.3621 60.9803 26.9333 59.0434 26.9333Z"/>
-          <path d="M85.3335 21.8951V7.5H82.7058V21.8951C82.7058 25.3957 80.9539 27.0857 77.3335 27.0857C73.7131 27.0857 71.9612 25.3957 71.9612 21.8951V7.5H69.3335V21.8951C69.3335 26.3011 71.7569 29.5 77.3335 29.5C82.9101 29.5 85.3335 26.3011 85.3335 21.8951Z"/>
-          <path d="M94.6062 23.7427L96.5153 29H99.3335L91.3638 8H88.3335L80.3335 29H83.1517L85.0608 23.7427H94.6062ZM85.9699 21.393L89.8183 10.4378H89.8789L93.7274 21.393H85.9699Z"/>
-          <path d="M97.3335 29H104.964C110.769 29 114.333 25.2699 114.333 18.5147C114.333 11.7594 110.769 8 104.964 8H97.3335V29ZM99.9851 10.3496H104.964C110.327 10.3496 111.682 14.4028 111.682 18.5147C111.682 22.6266 110.327 26.6503 104.964 26.6503H99.9851V10.3496Z"/>
-          <path d="M13.6691 29H16.3025L19.9307 10.3496H26.8946L27.3335 8H10.7724L10.3335 10.3496H17.2974L13.6691 29Z"/>
-          <path d="M5.5824 8L1.3335 29H4.08459L8.3335 8H5.5824Z"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <nav class="main-nav main-nav--closed">
+        <a class="main-nav__logo" href="/">
+          <svg width="116" height="36" viewBox="0 0 116 36" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M45.3722 16.7382C42.2296 15.9684 39.925 15.5834 39.925 12.7705C39.925 11.0236 41.5412 9.86877 44.5641 9.86877C47.9462 9.86877 49.5624 11.3493 49.9515 14.1918H52.6451C52.286 9.80956 49.1134 7.5 44.5641 7.5C39.8353 7.5 37.2314 9.72073 37.2314 13.0666C37.2314 17.1824 41.0624 18.2779 44.2648 19.0182C49.0536 20.1137 50.6398 20.6467 50.6398 23.5485C50.6398 25.4435 49.3229 27.1312 45.6117 27.1312C41.1222 27.1312 39.3265 24.8809 39.0272 21.9791H36.3335C36.6328 26.8351 40.5536 29.5 45.6117 29.5C51.0289 29.5 53.3335 26.6279 53.3335 23.5485C53.3335 18.7221 50.1909 17.9226 45.3722 16.7382Z"
+            />
+            <path
+              d="M69.491 28.2863L67.3486 25.6405C69.2562 23.7163 70.5475 21.1608 71.0757 18.3346C72.3083 11.7804 69.0508 7 62.7998 7C56.7249 7 51.7946 11.6 50.5914 17.9739C49.3588 24.5281 52.6163 29.3386 58.8379 29.3386C61.215 29.3386 63.4748 28.6471 65.3824 27.3542L67.5247 30L69.491 28.2863ZM59.0434 26.9333C53.8196 26.9333 52.3228 22.8745 53.1739 18.3346C54.0543 13.6144 57.2825 9.40523 62.6237 9.40523C67.8475 9.40523 69.3736 13.434 68.4932 17.9739C68.0823 20.1386 67.2019 22.1529 65.9106 23.7163L63.6802 20.9804L61.7433 22.6941L63.9443 25.4601C62.5944 26.3621 60.9803 26.9333 59.0434 26.9333Z"
+            />
+            <path
+              d="M85.3335 21.8951V7.5H82.7058V21.8951C82.7058 25.3957 80.9539 27.0857 77.3335 27.0857C73.7131 27.0857 71.9612 25.3957 71.9612 21.8951V7.5H69.3335V21.8951C69.3335 26.3011 71.7569 29.5 77.3335 29.5C82.9101 29.5 85.3335 26.3011 85.3335 21.8951Z"
+            />
+            <path
+              d="M94.6062 23.7427L96.5153 29H99.3335L91.3638 8H88.3335L80.3335 29H83.1517L85.0608 23.7427H94.6062ZM85.9699 21.393L89.8183 10.4378H89.8789L93.7274 21.393H85.9699Z"
+            />
+            <path
+              d="M97.3335 29H104.964C110.769 29 114.333 25.2699 114.333 18.5147C114.333 11.7594 110.769 8 104.964 8H97.3335V29ZM99.9851 10.3496H104.964C110.327 10.3496 111.682 14.4028 111.682 18.5147C111.682 22.6266 110.327 26.6503 104.964 26.6503H99.9851V10.3496Z"
+            />
+            <path
+              d="M13.6691 29H16.3025L19.9307 10.3496H26.8946L27.3335 8H10.7724L10.3335 10.3496H17.2974L13.6691 29Z"
+            />
+            <path d="M5.5824 8L1.3335 29H4.08459L8.3335 8H5.5824Z" />
           </svg>
-      </a>
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Open navigation</span></button>
+        </a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Open navigation</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#home">Home</a>
+            <a class="link-btn" href="#home">Home</a>
           </li>
           <li class="site-list__item">
-            <a href="#about">About</a>
+            <a class="link-btn" href="#about">About</a>
           </li>
           <li class="site-list__item">
-            <a href="#services">Services</a>
+            <a class="link-btn" href="#services">Services</a>
           </li>
           <li class="site-list__item">
-            <a href="#projects">Projects</a>
+            <a class="link-btn" href="#projects">Projects</a>
           </li>
           <li class="site-list__item">
-            <a href="#contacts">Contacts</a>
+            <a class="link-btn" href="#contacts">Contacts</a>
           </li>
         </ul>
 
@@ -44,82 +56,89 @@
           <li class="social-list__item"><a href="">Upwork</a></li>
           <li class="social-list__item"><a href="">Calendly</a></li>
         </ul>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main class="page__main">
-    <h1 class="visually-hidden">Digital agency IT SQUAD</h1>
-    <section class="page__section hero">
-      <div class="hero__wrapper">
-        <p class="hero__team-name">IT SQUAD</p>
-        <p class="hero__description lead">
-          Development of <span class="hero__accent">a full cycle</span><br>
-          turnkey online stores
-        </p>
+    <main class="page__main">
+      <h1 class="visually-hidden">Digital agency IT SQUAD</h1>
+      <section class="page__section hero">
+          <p class="hero__time">Ukraine/ <time>10:33</time></p>
+          <p class="hero__team-name">IT SQUAD</p>
+          <p class="hero__description lead">
+            Development of <span class="hero__accent">a full cycle</span><br />
+            turnkey online stores
+          </p>
 
-        <picture>
-          <source media="(min-width: 601px)"
-                  srcset="assets/hero.png">
-          <img class="hero__image image" src="assets/hero_mobile.png" alt="Our team photo">
-        </picture>
+          <picture class="hero__image">
+            <source media="(min-width: 601px)" srcset="assets/hero.png" />
+            <img class="hero__image image" src="assets/hero_mobile.png" alt="Our team photo" />
+          </picture>
 
-        <a class="hero__link-to-contacts contact-btn" href="#contacts">Work with us</a>
-      </div>
-    </section>
+          <a class="hero__link-to-contacts link-btn" href="#contacts">Work with us</a>
+      </section>
 
-    <section class="page__section about" id="about">
-      <div class="about__wrapper">
-        <h2 class="about__title title">About</h2>
+      <section class="page__section about" id="about">
+        <div class="about__column">
+          <h2 class="about__title title">About</h2>
 
-        <p class="about__lead lead">
-          IT SQUAD is a digital agency, specialize in front-end development of online stores on the Shopify platform.
-        </p>
+          <p class="about__lead lead">
+            IT SQUAD is a digital agency, specialize in front-end development of online stores on the Shopify platform.
+          </p>
 
-        <img class="about__image image" width="350" height="285" src="/assets/about-1.png" alt="Image of our workflow">
+          <img
+            class="about__image image"
+            width="350"
+            height="285"
+            src="/assets/about-1.png"
+            alt="Image of our workflow"
+          />
+        </div>
+        <div class="about__column">
+          <p class="about__description">
+            We specialize in front-end development of online stores on the Shopify platform. Focused on digitally
+            transforming brands. We help businesses launch, grow and gain a competitive edge in today’s digital-led
+            world through strategy and tech. Our mission is to create remarkable digital experiences that connect brands
+            to their customers.
+          </p>
 
-        <p class="about__description">
-          We specialize in front-end development of online stores on the Shopify platform. Focused on digitally transforming brands. We help businesses launch, grow and gain a competitive edge in today’s digital-led world through strategy and tech. Our mission is to create remarkable digital experiences that connect brands to their customers.
-        </p>
+          <img
+            class="about__image image"
+            width="350"
+            height="265"
+            src="/assets/about-2.png"
+            alt="Image of our workflow"
+          />
 
-        <img class="about__image image" width="350" height="265" src="/assets/about-2.png" alt="Image of our workflow">
+          <p class="about__values">
+            Based in Ukraine. <br />
+            10% of each project we donate for Ukraine.
+          </p>
+        </div>
+      </section>
 
-        <p class="about__values">
-          Based in Ukraine. <br>
-          10% of each project we donate for Ukraine.
-        </p>
-      </div>
-    </section>
-
-    <section class="page__section advantages">
-      <div class="advantages__wrapper">
+      <section class="page__section advantages">
         <h2 class="advantages__title title">Advantages</h2>
 
-        <p class="advantages__lead lead">
-          We shepherd our clients’ growth by meticulously enhancing their image with highly individualized focus. With an editor’s eye on emerging trends and deep ties to cultural arbiters, we are an editorial platform for our clients’ voice.
-        </p>
+        <div class="advantages__inner">
+          <p class="advantages__lead lead">
+            We shepherd our clients’ growth by meticulously enhancing their image with highly individualized focus. With
+            an editor’s eye on emerging trends and deep ties to cultural arbiters, we are an editorial platform for our
+            clients’ voice.
+          </p>
 
-        <ol class="advantages__list">
-          <li class="advantages__item">
-            We provide fullcycle Online Store Development, from the clients idea to the final result
-          </li>
-          <li class="advantages__item">
-            We help on each development step to meet all needs of the client
-          </li>
-          <li class="advantages__item">
-            We provide most required services for the E-Commerce stores
-          </li>
-          <li class="advantages__item">
-            We care about the success of your business because this’s our success too
-          </li>
-          <li class="advantages__item">
-            After launch support
-          </li>
-        </ol>
-      </div>
-    </section>
+          <ol class="advantages__list">
+            <li class="advantages__item">
+              We provide fullcycle Online Store Development, from the clients idea to the final result
+            </li>
+            <li class="advantages__item">We help on each development step to meet all needs of the client</li>
+            <li class="advantages__item">We provide most required services for the E-Commerce stores</li>
+            <li class="advantages__item">We care about the success of your business because this’s our success too</li>
+            <li class="advantages__item">After launch support</li>
+          </ol>
+        </div>
+      </section>
 
-    <section class="page__section numbers">
-      <div class="numbers__wrapper">
+      <section class="page__section numbers">
         <h2 class="numbers__title title">IT SQUAD in numbers</h2>
 
         <dl class="numbers__list">
@@ -143,11 +162,9 @@
             <dd class="numbers__description">total revenue to the clients</dd>
           </div>
         </dl>
-      </div>
-    </section>
+      </section>
 
-    <section class="page__section services" id="services">
-      <div class="services__wrapper">
+      <section class="page__section services" id="services">
         <h2 class="services__title title">Services</h2>
 
         <p class="services__lead lead">
@@ -176,162 +193,142 @@
             <a class="services__link" href="#"></a>
           </li>
         </ol>
-      </div>
-    </section>
+      </section>
 
-    <section class="page__section stages">
-      <div class="stages__wrapper">
-        <h2 class="stages__title title">Stages of work</h2>
+      <section class="page__section stages">
+          <h2 class="stages__title title">Stages of work</h2>
 
-        <p class="stages__lead lead">
-          We do this across multiple competency centers to help transform organizations.
-        </p>
+          <p class="stages__lead lead">
+            We do this across multiple competency centers to help transform organizations.
+          </p>
 
-        <ol class="stages__list">
-          <li class="stages__item">
-            Disscussing all requirements & mockups for the project
-          </li>
-          <li class="stages__item">
-            Creation of an estimation  table/ Gant’s diagram
-          </li>
-          <li class="stages__item">
-            Work plan approval
-          </li>
-          <li class="stages__item">
-            Starting the development
-          </li>
-          <li class="stages__item">
-            Ready WebSite QA
-          </li>
-          <li class="stages__item">
-            Transfer of the finished store to the client
-          </li>
-        </ol>
-      </div>
-    </section>
+          <ol class="stages__list">
+            <li class="stages__item">Disscussing all requirements & mockups for the project</li>
+            <li class="stages__item">Creation of an estimation table/ Gant’s diagram</li>
+            <li class="stages__item">Work plan approval</li>
+            <li class="stages__item">Starting the development</li>
+            <li class="stages__item">Ready WebSite QA</li>
+            <li class="stages__item">Transfer of the finished store to the client</li>
+          </ol>
+      </section>
 
-    <section class="page__section team">
-      <div class="team__wrapper">
+      <section class="page__section team">
         <h2 class="team__title title">The team</h2>
+        <div class="team__inner">
+          <img class="team__image image" src="/assets/team-1.png" alt="Photo of our team" />
 
-        <img class="team__image image" src="/assets/team-1.png" alt="Photo of our team">
+          <img class="team__image image" src="/assets/team-2.png" alt="Photo of our team" />
 
-        <img class="team__image image" src="/assets/team-2.png" alt="Photo of our team">
+          <p class="team__lead lead">
+            We bring a global team of specialized developers, and technicians with a mission of consistently delivering
+            ideas and work that matters.
+          </p>
 
-        <p class="team__lead lead">
-          We bring a global team of specialized developers, and technicians with a mission of consistently delivering ideas and work that matters.
+          <p class="team__mission">
+            Our mission is simple - consistently deliver ideas and work that matters and exceeds client expectations
+            through a powerful mix of exquisite design and innovative technology. IT Squad is a young, close-knit and
+            fast growing team of professionals, driven by bold ideas and diverse perspectives. We care about our
+            projects and what we do because we want to make sure our clients can excel.
+          </p>
+        </div>
+      </section>
+
+      <section class="page__section customers">
+        <div class="customers__wrapper">
+          <h2 class="customers__title title">Our customers</h2>
+
+          <p class="customers__lead lead">WE TRANSFORM COMPANIES INTO THE BEST VERSIONS OF THEMSELVES.</p>
+
+          <ul class="customers__list">
+            <li class="customers__item">
+              <a class="customers__link" href="https://urbanista.com">Urbanista.com</a>
+            </li>
+            <li class="customers__item">
+              <a class="customers__link" href="https://dreamerdesigns.com">Dreamerdesigns.com</a>
+            </li>
+            <li class="customers__item">
+              <a class="customers__link" href="https://mybacs.com">MyBacs.com</a>
+            </li>
+            <li class="customers__item">
+              <a class="customers__link" href="https://sokolov.eu">Sokolov.eu</a>
+            </li>
+            <li class="customers__item">
+              <a class="customers__link" href="https://filippoloreti.com">filippoloreti.com</a>
+            </li>
+            <li class="customers__item">
+              <a class="customers__link" href="https://avatar-languages.com">avatar-languages.com</a>
+            </li>
+            <li class="customers__item">
+              <a class="customers__link" href="https://thebrandsunday.com">Thebrandsunday.com</a>
+            </li>
+            <li class="customers__item">
+              <a class="customers__link" href="https://vitalgym.co">Vitalgym.co</a>
+            </li>
+            <li class="customers__item">
+              <a class="customers__link" href="https://perifit.co">Perifit.co</a>
+            </li>
+            <li class="customers__item">
+              <a class="customers__link" href="https://santatrees.co.uk">Santatrees.co.uk</a>
+            </li>
+            <li class="customers__item">
+              <a class="customers__link" href="https://urbanhome.co">Urbanhome.co</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="page__section consultation">
+          <h2 class="consultation__title title">LET'S DISCUSS YOUR PROJECT</h2>
+
+          <button class="consultation__btn link-btn" type="button">To get the consultation</button>
+      </section>
+    </main>
+
+    <footer class="page__footer">
+      <section class="contacts" id="contacts">
+        <h2 class="contacts__title title">Get in touch</h2>
+
+        <p class="contacts__lead lead">
+          We love working alongside ambitious brands and people. Drop us a line if you’d like us to build something
+          great together.
         </p>
 
-        <p class="team__mission">
-          Our mission is simple - consistently deliver ideas and work that matters and exceeds client expectations through a powerful mix of exquisite design and innovative technology. IT Squad is a young, close-knit and fast growing team of professionals, driven by bold ideas and diverse perspectives. We care about our projects and what we do because we want to make sure our clients can excel.
-        </p>
-      </div>
-    </section>
+        <div class="contacts__items">
+          <p class="contacts__physical-address">
+            Ukraine, Kyiv<br />
+            Mon-Fri - <time datetime="09:00">09:00</time>-<time datetime="19:00">19:00</time><br />
+            Sat-Sun - Day off
+          </p>
 
-    <section class="page__section customers">
-      <div class="customers__wrapper">
-        <h2 class="customers__title title">Our customers</h2>
+          <p class="contacts__tels">
+            <a class="contacts__tel" href="tel:+380508221214">+380 50 822 12 14</a>
+            <a class="contacts__tel" href="tel:+380507133591">+380 50 713 35 91</a>
+          </p>
 
-        <p class="customers__lead lead">
-          WE TRANSFORM COMPANIES INTO THE BEST VERSIONS OF THEMSELVES.
-        </p>
+          <p class="contacts__emails">
+            <a class="contacts__email" href="mailto:radwebmax@gmail.com">radwebmax@gmail.com</a>
+            <a class="contacts__email" href="mailto:info@itsquad.agency">info@itsquad.agency</a>
+            <a class="contacts__email" href="mailto:recruiter@itsquad.agency">recruiter@itsquad.agency</a>
+          </p>
 
-        <ul class="customers__list">
-          <li class="customers__item">
-            <a class="customers__link" href="https://urbanista.com">Urbanista.com</a>
-          </li>
-          <li class="customers__item">
-            <a class="customers__link" href="https://dreamerdesigns.com">Dreamerdesigns.com</a>
-          </li>
-          <li class="customers__item">
-            <a class="customers__link" href="https://mybacs.com">MyBacs.com</a>
-          </li>
-          <li class="customers__item">
-            <a class="customers__link" href="https://sokolov.eu">Sokolov.eu</a>
-          </li>
-          <li class="customers__item">
-            <a class="customers__link" href="https://filippoloreti.com">filippoloreti.com</a>
-          </li>
-          <li class="customers__item">
-            <a class="customers__link" href="https://avatar-languages.com">avatar-languages.com</a>
-          </li>
-          <li class="customers__item">
-            <a class="customers__link" href="https://thebrandsunday.com">Thebrandsunday.com</a>
-          </li>
-          <li class="customers__item">
-            <a class="customers__link" href="https://vitalgym.co">Vitalgym.co</a>
-          </li>
-          <li class="customers__item">
-            <a class="customers__link" href="https://perifit.co">Perifit.co</a>
-          </li>
-          <li class="customers__item">
-            <a class="customers__link" href="https://santatrees.co.uk">Santatrees.co.uk</a>
-          </li>
-          <li class="customers__item">
-            <a class="customers__link" href="https://urbanhome.co">Urbanhome.co</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="page__section consultation">
-      <div class="consultation__wrapper">
-        <h2 class="consultation__title title">LET'S DISCUSS YOUR PROJECT</h2>
-
-        <button class="consultation__btn contact-btn" type="button">To get the consultation</button>
-      </div>
-    </section>
-  </main>
-
-  <footer class="page__footer">
-    <section class="contacts" id="contacts">
-      <h2 class="contacts__title title">Get in touch</h2>
-
-      <p class="contacts__lead lead">
-        We love working alongside ambitious brands and people. Drop us a line if you’d like us to build something great together.
-      </p>
-
-      <div class="contacts__items">
-        <p class="contacts__physical-address">
-          Ukraine, Kyiv<br>
-          Mon-Fri - <time datetime="09:00">09:00</time>-<time datetime="19:00">19:00</time><br>
-          Sat-Sun - Day off
-        </p>
-
-        <p class="contacts__tels">
-          <a class="contacts__tel" href="tel:+380508221214">+380 50 822 12 14</a>
-          <a class="contacts__tel" href="tel:+380507133591">+380 50 713 35 91</a>
-        </p>
-
-        <p class="contacts__emails">
-          <a class="contacts__email" href="mailto:radwebmax@gmail.com">radwebmax@gmail.com</a>
-          <a class="contacts__email" href="mailto:info@itsquad.agency">info@itsquad.agency</a>
-          <a class="contacts__email" href="mailto:recruiter@itsquad.agency">recruiter@itsquad.agency</a>
-        </p>
-
-
-        <ul class="contacts__socials">
-          <li class="contacts__social">
-            <a class="contacts__social-link" href="#" target="_blank">Instagram</a>
-          </li>
-          <li class="contacts__social">
-            <a class="contacts__social-link" href="#" target="_blank">Facebook</a>
-          </li>
-          <li class="contacts__social">
-            <a class="contacts__social-link" href="#" target="_blank">Upwork</a>
-          </li>
-          <li class="contacts__social">
-            <a class="contacts__social-link" href="#" target="_blank">Calendly</a>
-          </li>
-        </ul>
-
+          <ul class="contacts__socials">
+            <li class="contacts__social">
+              <a class="contacts__social-link" href="#" target="_blank">Instagram</a>
+            </li>
+            <li class="contacts__social">
+              <a class="contacts__social-link" href="#" target="_blank">Facebook</a>
+            </li>
+            <li class="contacts__social">
+              <a class="contacts__social-link" href="#" target="_blank">Upwork</a>
+            </li>
+            <li class="contacts__social">
+              <a class="contacts__social-link" href="#" target="_blank">Calendly</a>
+            </li>
+          </ul>
+        </div>
         <a class="contacts__up-btn up-btn" href="#">back to top</a>
-      </div>
-    </section>
-
-    <section class="powered-by">
-      IT Squad /22 ©
-    </section>
-  </footer>
-</body>
+      </section>
+    </footer>
+    <section class="powered-by">IT Squad /22 ©</section>
+  </body>
 </html>

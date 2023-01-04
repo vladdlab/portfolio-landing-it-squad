@@ -1,0 +1,29 @@
+/* Stages Lead */
+@media (width >= 1200px) {
+  .stages__lead {
+    max-width: 670px;
+  }
+}
+
+/* Stages List */
+.stages__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px 0;
+}
+
+@media (width >= 1200px) {
+  .stages__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--gap-1) 100px;
+  }
+}
+
+.stages__item {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 20px;
+  border-bottom: 0;
+  border-top: 1px solid var(--light-green);
+}

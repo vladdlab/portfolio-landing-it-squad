@@ -1,9 +1,27 @@
 /* About */
 
 .about {
-  /* padding: var(--gap-1) 0; */
+  display: block;
 }
 
+@media (width >= 1200px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
+
+  .about__image {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .about__image:nth-child(2) {
+    height: 527px;
+  }
+}
+
+/* about __values */
 .about__values {
   color: var(--light-gray);
 }

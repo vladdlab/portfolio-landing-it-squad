@@ -5,7 +5,6 @@
 }
 
 .page__body {
-  margin: 0;
   font-family: "Neue Montreal", Arial, sans-serif;
   background-color: var(--page-background-color);
   color: var(--white);
@@ -13,12 +12,26 @@
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.2;
+  margin: 0;
+}
+
+@media (width >= 1200px) {
+  .page__body {
+    font-size: 1.875rem;
+  }
 }
 
 .page__main {
   padding: 0 var(--page-x-paddings);
+  max-width: calc(1240px + var(--page-x-paddings) * 2);
+  margin: 0 auto;
 }
 
 .page__section {
   margin-bottom: var(--gap-2);
+}
+
+.page__footer {
+  border-top: 1px solid var(--light-green);
+  border-bottom: 1px solid var(--light-green);
 }

@@ -1,14 +1,54 @@
+/* Numbers List */
+.numbers__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap-1) 100px;
+  margin: 0;
+}
+
+@media (width >= 1200px) {
+  .numbers__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Numbers Item */
 .numbers__item {
   padding: 0.5em 0 0.5em 3.75em;
-  margin-bottom: var(--gap-1);
   border-bottom: 1px solid var(--light-green);
 }
 
+@media (width >= 1200px) {
+  .numbers__item {
+    padding: 0 0 1.33em;
+  }
+
+  .numbers__item:nth-child(1) {
+    order: 1;
+    text-align: right;
+  }
+
+  .numbers__item:nth-child(2) {
+    order: 3;
+    text-align: right;
+  }
+
+  .numbers__item:nth-child(3) {
+    order: 2;
+  }
+
+  .numbers__item:nth-child(4) {
+    order: 4;
+  }
+}
+
+/* Numbers Value */
 .numbers__value {
   font-weight: 500;
   margin-bottom: 0.5em;
 }
 
+/* Numbers Description */
 .numbers__description {
   margin: 0;
   color: var(--light-gray);

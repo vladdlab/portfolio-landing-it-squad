@@ -1,14 +1,27 @@
 /* Advantages */
 
+.advantages__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (width >= 1200px) {
+  .advantages__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
+}
+
 .advantages__lead {
   font-size: 1.875rem;
   border-top: 1px solid var(--light-green);
-  border-bottom: 1px solid var(--light-green);
-  padding: var(--gap-1) 0;
+  padding: var(--gap-1) 0 0;
 }
 
 .advantages__list {
+  border-top: 1px solid var(--light-green);
   border-bottom: 1px solid var(--light-green);
+  padding: 20px 0;
 }
 
 .advantages__item {
