@@ -1,6 +1,7 @@
 # IT SQUAD landing (in work)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d042eac2-d66a-4419-b16c-9f89fc0d71c5/deploy-status)](https://app.netlify.com/sites/vladdlab-it-squad/deploys)
+
 There is a simple landing page I made for my portfolio. It still in progress, but you can already see how I use BEM, mobile-first and other up-to-date methodologies to build web pages. It would be convenient to use SCSS or Pug here, but I used pure HTML and JS on purpose. I wanted to make this landing to show my skills in:
 
 - modern HTML, CSS and JS
