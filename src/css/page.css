@@ -1,9 +1,24 @@
 /* Page */
-
 .page {
   margin: 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--green) var(--page-background-color);
 }
 
+.page::-webkit-scrollbar {
+  width: 5px;
+}
+
+.page::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.page::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 5px;
+}
+
+/* Page Body */
 .page__body {
   font-family: "Neue Montreal", Arial, sans-serif;
   background-color: var(--page-background-color);
@@ -21,16 +36,19 @@
   }
 }
 
+/* Page Main */
 .page__main {
   padding: 0 var(--page-x-paddings);
   max-width: calc(1240px + var(--page-x-paddings) * 2);
   margin: 0 auto;
 }
 
+/* Page Section */
 .page__section {
   margin-bottom: var(--gap-2);
 }
 
+/* Page Footer */
 .page__footer {
   border-top: 1px solid var(--light-green);
   border-bottom: 1px solid var(--light-green);
