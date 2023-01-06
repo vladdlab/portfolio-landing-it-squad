@@ -1,8 +1,16 @@
 /* Page header */
 .page-header {
-  position: relative;
-  padding: var(--gap-1) var(--page-x-paddings);
+  position: sticky;
+  top: 0;
+  padding: 0.7em var(--page-x-paddings);
   max-width: calc(1240px + var(--page-x-paddings) * 2);
-  margin: 0 auto;
-  margin-bottom: 15px;
+  margin: calc(var(--gap-1) - 0.7em) auto calc(var(--gap-1) - 0.7em + 15px);
+  z-index: 1;
+  background-color: var(--header-background-color);
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
+.page__body--nav-opened .page-header {
+  position: static;
+  margin: 0;
 }

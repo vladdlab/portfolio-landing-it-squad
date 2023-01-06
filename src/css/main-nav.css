@@ -27,7 +27,6 @@
 /* Main nav Toggle */
 .main-nav__toggle {
   position: absolute;
-  top: var(--gap-1);
   right: var(--page-x-paddings);
   display: block;
   width: 36px;

@@ -22,7 +22,7 @@
 }
 
 @media (width < 1200px) {
-  .site-list__item:first-child {
+  .site-list__item a {
     border: 1px solid var(--black);
     color: var(--black);
   }

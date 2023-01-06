@@ -3,6 +3,7 @@
   margin: 0;
   scrollbar-width: thin;
   scrollbar-color: var(--green) var(--page-background-color);
+  scroll-padding-top: 106px;
 }
 
 .page::-webkit-scrollbar {
@@ -28,6 +29,12 @@
   font-size: 1.25rem;
   line-height: 1.2;
   margin: 0;
+}
+
+.page__body--nav-opened {
+  height: 100vh;
+  overflow-y: hidden;
+  position: fixed;
 }
 
 @media (width >= 1200px) {
