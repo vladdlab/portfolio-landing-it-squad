@@ -4,6 +4,7 @@
   scrollbar-width: thin;
   scrollbar-color: var(--green) var(--page-background-color);
   scroll-padding-top: 106px;
+  scroll-behavior: smooth;
 }
 
 .page::-webkit-scrollbar {
@@ -31,11 +32,13 @@
   margin: 0;
 }
 
-.page__body--nav-opened {
-  touch-action: none;
-  -webkit-overflow-scrolling: none;
-  overflow: hidden;
-  overscroll-behavior: none;
+@media (width < 1200px) {
+  .page__body--nav-opened {
+    touch-action: none;
+    -webkit-overflow-scrolling: none;
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
 }
 
 @media (width >= 1200px) {

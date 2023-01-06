@@ -1,7 +1,7 @@
 /* Site list */
 .site-list {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   gap: var(--gap-1) 40px;
 }
 

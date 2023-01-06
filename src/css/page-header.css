@@ -10,6 +10,10 @@
   backdrop-filter: saturate(180%) blur(10px);
 }
 
-.page__body--nav-opened .page-header {
-  backdrop-filter: none;
+@media (width < 1200px) {
+  .page__body--nav-opened .page-header {
+    backdrop-filter: none;
+    height: 100vh;
+    background-color: var(--green);
+  }
 }
