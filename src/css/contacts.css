@@ -4,6 +4,7 @@
   grid-template-columns: 1fr;
   padding: var(--gap-1) var(--page-x-paddings);
   max-width: calc(1240px + var(--page-x-paddings) * 2);
+  margin: 0 auto;
 }
 
 @media (width >= 1200px) {
