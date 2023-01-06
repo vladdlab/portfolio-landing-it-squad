@@ -11,6 +11,5 @@
 }
 
 .page__body--nav-opened .page-header {
-  position: static;
-  margin: 0;
+  backdrop-filter: none;
 }

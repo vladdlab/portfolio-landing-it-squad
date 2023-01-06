@@ -14,11 +14,8 @@ function toggleMenu() {
     document.body.classList.remove('page__body--nav-opened');
     mainNav.classList.remove('main-nav--opened');
     mainNav.classList.add('main-nav--closed');
-    document.body.style.top = '';
-    window.scrollTo(0, lastScroll);
   } else {
     mobileMenuOpened = true
-    lastScroll = window.scrollY;
     mainNav.classList.add('main-nav--opened');
     mainNav.classList.remove('main-nav--closed');
     document.body.classList.add('page__body--nav-opened');
