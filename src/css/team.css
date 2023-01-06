@@ -18,17 +18,17 @@
 
 /* Team Image */
 
-.team__image:first-of-type {
+.team__image:first-child {
   display: none;
 }
 
 @media (width >= 1200px) {
-  .team__image:first-of-type {
+  .team__image:first-child {
     display: block;
     grid-area: image1;
   }
 
-  .team__image:last-of-type {
+  .team__image:last-child {
     grid-area: image2;
   }
 }
