@@ -10,8 +10,10 @@
   color: var(--white);
   background: transparent;
   outline-offset: 5px;
+  cursor: pointer;
 }
 
+.link-btn:active,
 .link-btn:hover {
   background-color: var(--green);
 }
