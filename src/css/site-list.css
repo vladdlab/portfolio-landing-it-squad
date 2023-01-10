@@ -5,7 +5,7 @@
   gap: var(--gap-1) 40px;
 }
 
-@media (width >= 1200px) {
+@media (width >= 1025px) {
   .site-list {
     flex-flow: row wrap;
   }
@@ -21,14 +21,14 @@
   text-align: center;
 }
 
-@media (width < 1200px) {
+@media (width <= 1024px) {
   .site-list__item a {
     border: 1px solid var(--black);
     color: var(--black);
   }
 }
 
-@media (width >= 1200px) {
+@media (width >= 1025px) {
   .site-list__item:first-child {
     display: none;
   }
