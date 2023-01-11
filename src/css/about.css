@@ -4,13 +4,21 @@
   display: block;
 }
 
-@media (width >= 1025px) {
+@media (width >= 768px) {
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 100px;
+    gap: var(--gap-x);
   }
 }
+
+/* @media (width >= 1025px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap-x);
+  }
+} */
 
 /* about __values */
 .about__values {
