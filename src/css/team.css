@@ -2,7 +2,7 @@
 .team__inner {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0 100px;
+  gap: 0 var(--gap-x);
 }
 
 @media (width > 1024px) {

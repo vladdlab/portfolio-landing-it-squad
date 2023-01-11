@@ -11,6 +11,16 @@
   --gap-0: 10px;
   --gap-1: 35px;
   --gap-2: 70px;
+  --gap-x: 100px;
+}
+
+@media (width >= 769px) {
+  :root {
+    --page-x-paddings: 40px;
+    --gap-1: 60px;
+    --gap-2: 100px;
+    --gap-x: 40px;
+  }
 }
 
 @media (width >= 1025px) {
@@ -18,5 +28,6 @@
     --page-x-paddings: 100px;
     --gap-1: 70px;
     --gap-2: 160px;
+    --gap-x: 100px;
   }
 }

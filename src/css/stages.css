@@ -16,7 +16,7 @@
   .stages__list {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: var(--gap-1) 100px;
+    gap: var(--gap-1) var(--gap-x);
   }
 }
 

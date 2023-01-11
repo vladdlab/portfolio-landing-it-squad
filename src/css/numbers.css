@@ -2,7 +2,7 @@
 .numbers__list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--gap-1) 100px;
+  gap: var(--gap-1) var(--gap-x);
   margin: 0;
 }
 
