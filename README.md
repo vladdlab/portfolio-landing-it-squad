@@ -1,4 +1,4 @@
-# IT SQUAD landing (in work)
+# IT SQUAD landing
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d042eac2-d66a-4419-b16c-9f89fc0d71c5/deploy-status)](https://app.netlify.com/sites/vladdlab-it-squad/deploys)
 
